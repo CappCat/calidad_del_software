@@ -1,0 +1,473 @@
+{
+	"info": {
+		"_postman_id": "d1bf4d39-358a-4ad2-83b2-1e68919a8951",
+		"name": "Proyecto Calidad del software",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41726766"
+	},
+	"item": [
+		{
+			"name": "Get usuarios",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"El código de respuesta es 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"El response body contiene los strings\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"email\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"password\");\r",
+							"     pm.expect(pm.response.text()).to.include(\"province\");\r",
+							"\r",
+							"});\r",
+							"pm.test(\"Tiempo de respuesta menor a 300ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get usuario",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"El código de respuesta es 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"El response body contiene los strings\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"email\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"password\");\r",
+							"     pm.expect(pm.response.text()).to.include(\"province\");\r",
+							"\r",
+							"});\r",
+							"pm.test(\"Tiempo de respuesta menor a 300ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/6779b942bf8d7da54f4637d4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"6779b942bf8d7da54f4637d4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get usuarios por correo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"El código de respuesta es 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"El response body contiene los strings\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"email\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"password\");\r",
+							"     pm.expect(pm.response.text()).to.include(\"province\");\r",
+							"\r",
+							"});\r",
+							"pm.test(\"Tiempo de respuesta menor a 300ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/email/example@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"email",
+						"example@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar producto de favoritos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"El código de respuesta es 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"El response body contiene los strings\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"email\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"password\");\r",
+							"     pm.expect(pm.response.text()).to.include(\"favorites\");\r",
+							"\r",
+							"});\r",
+							"pm.test(\"Tiempo de respuesta menor a 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/removeFavorite/67895ec471fdde667bb36918/67b78b1401c171e51e4b91d2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"removeFavorite",
+						"67895ec471fdde667bb36918",
+						"67b78b1401c171e51e4b91d2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get páginas",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"El código de respuesta es 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"El response body contiene los strings\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"title\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"url\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"logoUrl\");\r",
+							"});\r",
+							"pm.test(\"Tiempo de respuesta menor a 300ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pages",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get categorías",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"El código de respuesta es 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"El response body contiene los strings\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"imgUrl\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"pages\");\r",
+							"});\r",
+							"pm.test(\"Tiempo de respuesta menor a 300ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get productos categoría",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"El código de respuesta es 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"El response body contiene los strings\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"title\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"price\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"link\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"image\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"pageImg\");\r",
+							"});\r",
+							"pm.test(\"Tiempo de respuesta menor a 15s\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(15000);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products/PC gamer/Tecnología",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"PC gamer",
+						"Tecnología"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar producto a favoritos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"El código de respuesta es 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"pm.test(\"El response body contiene los strings\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"title\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"price\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"link\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"image\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"pageImg\");\r",
+							"});\r",
+							"pm.test(\"Tiempo de respuesta menor a 1s\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"67b78b1401c171e51e4b91d2\"\r\n  },\r\n  \"title\": \"Ltc Pc Gamer Intel I9 14900k Z790 32gbram 1tb Rtx 4070ti\",\r\n  \"price\": 3229,\r\n  \"userId\": \"67895ec471fdde667bb36918\",\r\n  \"link\": \"https://click1.mercadolibre.com.ec/mclics/clicks/external/MEC/count?a=JI9RnCdxIXmfKiQThErB9sbTP0u2clNT%2FFzNpLIxanWVQrE0LjUm7Tb7FMaiQWx9NzYv7zA1WQdE6j0O%2F14kkcMfjaZK7NwThX4WEJkXYl6blM2rjzyECioY2AmQ1RIgmEvkfyzIodlu1VHee7NZORBXIHmGQza4wLHV1WTwPskXyFqtoeNoubhf3qWLcyofYDtAjp5rnqRPh4LH19SPCY3sCJtMoE0%2FI2Gi8vxmswOBQDdyRtK7cti7J3MaeBv9OZEQt5vE%2FX6l19TjWiLT1E9ZOW%2FIrQRKt7r0cf84zBu%2BRg%2F6LeSxHO3qpyqOUqzXbJODN9FnLuiBpqx79QToxtYt4FIehF9RwuoD%2FykOc0YflwEKYMeFIi%2Fj%2FyBABoFRvFHt060nPx3aLo9NEnwU8SHvA8gEv9mueRv047ICAdqvDAxtzAYDq9CpcLlXQkxyd14YeLpolPPCYRtbFFQnpPfjZqWTDhw8CA%2BMd42VwwiSDudZbDt7NQ9kUMICrIh%2B1Pt8vZJI8Z0UqSrzXDbi7aNvouqESvv7LeZy8MH56nIVloIfUouNugQ8m70do1JMhSf2fdkmiGeFsgW4zfZ4s4elW4xNFMQX%2FiotaEMjiN1hsCGGsbP9JRT0XlCJGFzlL29g3WK%2Ff0kGA6rQCZSpJ6PrffjJNfmmPutHcNhXMZvMs%2FkYoeylmAiFhSMLBYk43JghjlQXHv9oduQJx0%2F1FCDBPCnn9g0pRJEvgBUP6jyX5wX%2BGpncDbHsby8fCU2HPtO%2FVkPMM%2BFJCajJ%2BO3wiKr9%2FCEzQhoYIKsTAxJFiYg%3D&e=mclics%2Fadvertising-results-augmenter-on%2B15097%2Cmclics%2Fmin-budget-throttling%2B54896%2Cmclics%2Fmax-bid-capped%2B36382%2Cmclics%2Fmax-bid-item-factor%2B23927%2Cmclics%2Fdomain-rules-override%2B74278%2Cmclics%2Fgmv-predictor%2B52393%2Cmclics%2Fdiscard-bid-lt-min%2B58213%2Cmclics%2Foverride-min-seasonality%2B49092%2Cmclics%2Fmore-ads-migration%2B58320&rb=x#polycard_client=search-nordic&tracking_id=82541b97-f9c8-4c30-b7bf-62050298941d\",\r\n  \"image\": \"https://http2.mlstatic.com/D_Q_NP_2X_841318-MEC73682676128_012024-V.webp\",\r\n  \"category\": \"Tecnología\",\r\n  \"pageImg\": \"https://www.eluniverso.com/resizer/wHyOuwjFxW1klWnGOO9ezOqWgEU=/arc-anglerfish-arc2-prod-eluniverso/public/Z6X5CHFB7VDFND6MAQ6XX7AKH4.png\",\r\n  \"__v\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/products/addFavoriteProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"addFavoriteProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un usuario",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"El código de respuesta es 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"pm.test(\"El response body contiene los strings\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"email\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"password\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"province\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"city\");\r",
+							"});\r",
+							"pm.test(\"Tiempo de respuesta menor a 1s\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"prueba12345\",\r\n  \"email\": \"prueba12345@pruebas.com\",\r\n  \"password\": \"$2b$10$yajgw1Js9Do9/aMlIfAvO.j/VGGFb2y2ZXvE5RGWQkP99NOsuLCuW\",\r\n  \"province\": \"Manabí\",\r\n  \"city\": \"Chone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get productos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"El código de respuesta es 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"El response body contiene los strings\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"title\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"price\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"link\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"image\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"pageImg\");\r",
+							"});\r",
+							"pm.test(\"Tiempo de respuesta menor a 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,452 @@
+{
+	"id": "ec8dc7df-2092-4248-8296-8f9e93c9cb50",
+	"name": "Proyecto Calidad del software",
+	"timestamp": "2025-08-03T01:07:44.404Z",
+	"collection_id": "41726766-d1bf4d39-358a-4ad2-83b2-1e68919a8951",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 30,
+	"delay": "1000",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-08-03T01:07:18.518Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "65c04b47-4b38-42ac-8040-0ea5c6fd3eca",
+			"name": "Get usuarios",
+			"url": "localhost:8080/users",
+			"time": 181,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El código de respuesta es 200": true,
+				"El response body contiene los strings": true,
+				"Tiempo de respuesta menor a 300ms": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El response body contiene los strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 300ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				181
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 200": true,
+					"El response body contiene los strings": true,
+					"Tiempo de respuesta menor a 300ms": true
+				}
+			]
+		},
+		{
+			"id": "3431211e-5030-4709-aeb7-391fca0ea4b3",
+			"name": "Get usuario",
+			"url": "localhost:8080/users/6779b942bf8d7da54f4637d4",
+			"time": 180,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El código de respuesta es 200": true,
+				"El response body contiene los strings": true,
+				"Tiempo de respuesta menor a 300ms": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El response body contiene los strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 300ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 200": true,
+					"El response body contiene los strings": true,
+					"Tiempo de respuesta menor a 300ms": true
+				}
+			]
+		},
+		{
+			"id": "7b773fd2-7fcb-425d-8c8c-93b2b54a4ca6",
+			"name": "Get usuarios por correo",
+			"url": "localhost:8080/users/email/example@gmail.com",
+			"time": 180,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El código de respuesta es 200": true,
+				"El response body contiene los strings": true,
+				"Tiempo de respuesta menor a 300ms": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El response body contiene los strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 300ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 200": true,
+					"El response body contiene los strings": true,
+					"Tiempo de respuesta menor a 300ms": true
+				}
+			]
+		},
+		{
+			"id": "c6095544-68e2-4d4b-8b6e-720af218dca5",
+			"name": "Borrar producto de favoritos",
+			"url": "localhost:8080/users/removeFavorite/67895ec471fdde667bb36918/67b78b1401c171e51e4b91d2",
+			"time": 365,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El código de respuesta es 200": true,
+				"El response body contiene los strings": true,
+				"Tiempo de respuesta menor a 500ms": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El response body contiene los strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				365
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 200": true,
+					"El response body contiene los strings": true,
+					"Tiempo de respuesta menor a 500ms": true
+				}
+			]
+		},
+		{
+			"id": "d6fe4c8d-5d47-49ee-b8ea-40edd73f70ea",
+			"name": "Get páginas",
+			"url": "localhost:8080/pages",
+			"time": 180,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El código de respuesta es 200": true,
+				"El response body contiene los strings": true,
+				"Tiempo de respuesta menor a 300ms": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El response body contiene los strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 300ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 200": true,
+					"El response body contiene los strings": true,
+					"Tiempo de respuesta menor a 300ms": true
+				}
+			]
+		},
+		{
+			"id": "5b79b38a-c93a-4f92-bc43-66280bf524bc",
+			"name": "Get categorías",
+			"url": "localhost:8080/categories",
+			"time": 181,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El código de respuesta es 200": true,
+				"El response body contiene los strings": true,
+				"Tiempo de respuesta menor a 300ms": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El response body contiene los strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 300ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				181
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 200": true,
+					"El response body contiene los strings": true,
+					"Tiempo de respuesta menor a 300ms": true
+				}
+			]
+		},
+		{
+			"id": "7f56235d-4ca3-423f-9493-4b018d331fd1",
+			"name": "Get productos categoría",
+			"url": "localhost:8080/products/PC gamer/Tecnología",
+			"time": 12067,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El código de respuesta es 200": true,
+				"El response body contiene los strings": true,
+				"Tiempo de respuesta menor a 15s": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El response body contiene los strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 15s": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12067
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 200": true,
+					"El response body contiene los strings": true,
+					"Tiempo de respuesta menor a 15s": true
+				}
+			]
+		},
+		{
+			"id": "3473df8f-306b-44c0-87df-76421390d5e8",
+			"name": "Agregar producto a favoritos",
+			"url": "localhost:8080/products/addFavoriteProduct",
+			"time": 895,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"El código de respuesta es 201": true,
+				"El response body contiene los strings": true,
+				"Tiempo de respuesta menor a 1s": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El response body contiene los strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 1s": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				895
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 201": true,
+					"El response body contiene los strings": true,
+					"Tiempo de respuesta menor a 1s": true
+				}
+			]
+		},
+		{
+			"id": "92b06f08-9ded-462c-b66b-c1fff7b765a9",
+			"name": "Crear un usuario",
+			"url": "localhost:8080/users/",
+			"time": 184,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"El código de respuesta es 201": true,
+				"El response body contiene los strings": true,
+				"Tiempo de respuesta menor a 1s": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El response body contiene los strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 1s": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 201": true,
+					"El response body contiene los strings": true,
+					"Tiempo de respuesta menor a 1s": true
+				}
+			]
+		},
+		{
+			"id": "46d6f121-b698-4711-b445-789302032384",
+			"name": "Get productos",
+			"url": "localhost:8080/products",
+			"time": 356,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El código de respuesta es 200": true,
+				"El response body contiene los strings": true,
+				"Tiempo de respuesta menor a 500ms": true
+			},
+			"testPassFailCounts": {
+				"El código de respuesta es 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El response body contiene los strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				356
+			],
+			"allTests": [
+				{
+					"El código de respuesta es 200": true,
+					"El response body contiene los strings": true,
+					"Tiempo de respuesta menor a 500ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 14769,
+	"collection": {
+		"requests": [
+			{
+				"id": "65c04b47-4b38-42ac-8040-0ea5c6fd3eca",
+				"method": "GET"
+			},
+			{
+				"id": "3431211e-5030-4709-aeb7-391fca0ea4b3",
+				"method": "GET"
+			},
+			{
+				"id": "7b773fd2-7fcb-425d-8c8c-93b2b54a4ca6",
+				"method": "GET"
+			},
+			{
+				"id": "c6095544-68e2-4d4b-8b6e-720af218dca5",
+				"method": "PATCH"
+			},
+			{
+				"id": "d6fe4c8d-5d47-49ee-b8ea-40edd73f70ea",
+				"method": "GET"
+			},
+			{
+				"id": "5b79b38a-c93a-4f92-bc43-66280bf524bc",
+				"method": "GET"
+			},
+			{
+				"id": "7f56235d-4ca3-423f-9493-4b018d331fd1",
+				"method": "GET"
+			},
+			{
+				"id": "3473df8f-306b-44c0-87df-76421390d5e8",
+				"method": "POST"
+			},
+			{
+				"id": "92b06f08-9ded-462c-b66b-c1fff7b765a9",
+				"method": "POST"
+			},
+			{
+				"id": "46d6f121-b698-4711-b445-789302032384",
+				"method": "GET"
+			}
+		]
+	}
+}
