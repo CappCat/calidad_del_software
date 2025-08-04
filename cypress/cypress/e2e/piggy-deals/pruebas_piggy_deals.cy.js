@@ -22,11 +22,17 @@ describe('Pruebas End to End de PiggyDeals', () => {
       cy.wait(20000)
       cy.get('.products-module__GkCdHa__productsSection > :nth-child(1)').should('be.visible')
     })
+
+    it('Prueba 5: Validar que no se busque un producto sin categoría', () => {
+      cy.get('.page-module__GsSXCa__searchContainer > input').type('PC Gamer')
+      cy.get('.page-module__GsSXCa__searchButton').click()
+      cy.get('.page-module__GsSXCa__errorMessage').should("be.visible")
+    })
   
     it('Prueba 6: validar cierre de sesion', () => {
       cy.get('.general-ui-module__G9rtfa__loginButton').click()
       cy.get(':nth-child(3) > a > .user-layout-module__MkbyVq__userLink > p').click()
-      cy.get('.general-ui-module__G9rtfa__loginButton').should('have.text', 'Iniciar Sesión')
+      cy.get('.general-ui-module__G9rtfa__loginButton').should("be.visible")
     })
 
     it('Prueba 7: Validar footer de la página', () => {

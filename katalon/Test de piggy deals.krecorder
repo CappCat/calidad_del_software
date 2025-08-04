@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Test de piggy deals</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Iniciar Sesion</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:3000/<datalist><option>http://localhost:3000/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='buscando?'])[1]/preceding::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='buscando?'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Iniciar Sesión']/parent::*</option><option>xpath=//button</option><option>css=button.general-ui-module__G9rtfa__loginButton</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>xpath=//input[@id='email']</option><option>xpath=//input</option><option>css=#email</option></datalist></td><td>Alejarodriguez10@gmail.com</td></tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>xpath=//input[@id='password']</option><option>xpath=//div[2]/input</option><option>css=#password</option></datalist></td><td>Andresbsc2004</td></tr>
+<tr><td>click</td><td>xpath=//button[@type='submit']<datalist><option>xpath=//button[@type='submit']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Iniciar Sesión'])[2]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Registrate'])[1]/preceding::button[1]</option><option>xpath=//form/button</option><option>css=button[type="submit"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='buscando?'])[1]/preceding::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='buscando?'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Alejandro Rodríguez']/parent::*</option><option>xpath=//button</option><option>css=button.general-ui-module__G9rtfa__loginButton.general-ui-module__G9rtfa__logged</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mi cuenta'])[1]/following::div[3]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mi cuenta'])[1]/following::div[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Alejandro Rodríguez'])[1]/following::div[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mi perfil'])[2]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nombre'])[1]/preceding::div[1]</option><option>xpath=//li[3]/a/div</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Buscar un producto</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:3000/<datalist><option>http://localhost:3000/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//input[@type='text']<datalist><option>xpath=//input[@type='text']</option><option>xpath=//input</option><option>css=input[type="text"]</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>xpath=//input[@type='text']<datalist><option>xpath=//input[@type='text']</option><option>xpath=//input</option><option>css=input[type="text"]</option></datalist></td><td>PC gamer</td></tr>
+<tr><td>click</td><td>xpath=//img[@alt='Tecnología']<datalist><option>xpath=//img[@alt='Tecnología']</option><option>xpath=//button/img</option><option>css=img[alt="Tecnología"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='buscando?'])[1]/following::*[name()='svg'][1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='buscando?'])[1]/following::*[name()='svg'][1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/preceding::*[name()='svg'][1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Productos populares'])[1]/preceding::*[name()='svg'][1]</option><option>css=svg</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>http://localhost:3000/search-results/PC%20gamer/Tecnolog%C3%ADa<datalist><option>http://localhost:3000/search-results/PC%20gamer/Tecnolog%C3%ADa</option></datalist></td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Productos'])[1]/following::p[3]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Productos'])[1]/following::p[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Iniciar Sesión'])[1]/following::p[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inicio'])[2]/preceding::p[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Categorías'])[1]/preceding::p[2]</option><option>xpath=//*/text()[normalize-space(.)='VOLANTE LOGITECH G923 DRIVING FORCE GAMER PS4 – PS5 y PC']/parent::*</option><option>xpath=//section/div/p</option><option>css=div.products-module__GkCdHa__productCard > p</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Guardar en favoritos</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:3000/<datalist><option>http://localhost:3000/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='buscando?'])[1]/preceding::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='buscando?'])[1]/preceding::button[1]</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option></datalist></td><td>Alejarodriguez10@gmail.com</td></tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option></datalist></td><td>Andresbsc2004</td></tr>
+<tr><td>click</td><td>xpath=//button[@type='submit']<datalist><option>xpath=//button[@type='submit']</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//input[@type='text']<datalist><option>xpath=//input[@type='text']</option><option>xpath=//input</option><option>css=input[type="text"]</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>xpath=//input[@type='text']<datalist><option>xpath=//input[@type='text']</option><option>xpath=//input</option><option>css=input[type="text"]</option></datalist></td><td>PC gamer</td></tr>
+<tr><td>click</td><td>xpath=//img[@alt='Tecnología']<datalist><option>xpath=//img[@alt='Tecnología']</option><option>xpath=//button/img</option><option>css=img[alt="Tecnología"]</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='buscando?'])[1]/following::*[name()='svg'][1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='buscando?'])[1]/following::*[name()='svg'][1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/preceding::*[name()='svg'][1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Productos populares'])[1]/preceding::*[name()='svg'][1]</option><option>css=svg</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>http://localhost:3000/search-results/PC%20gamer/Tecnolog%C3%ADa<datalist><option>http://localhost:3000/search-results/PC%20gamer/Tecnolog%C3%ADa</option></datalist></td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Productos'])[1]/following::p[3]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Productos'])[1]/following::p[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Iniciar Sesión'])[1]/following::p[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inicio'])[2]/preceding::p[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Categorías'])[1]/preceding::p[2]</option><option>xpath=//*/text()[normalize-space(.)='VOLANTE LOGITECH G923 DRIVING FORCE GAMER PS4 – PS5 y PC']/parent::*</option><option>xpath=//section/div/p</option><option>css=div.products-module__GkCdHa__productCard > p</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//img[@alt='Botón de favoritos']<datalist><option>xpath=//img[@alt='Botón de favoritos']</option><option>xpath=//button[@id='favoriteButton']/img</option><option>xpath=//section/div/div/button/img</option><option>css=img[alt="Botón de favoritos"]</option></datalist></td><td></td></tr>
+<tr><td>pause</td><td>3000<datalist><option>3000</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Productos'])[1]/preceding::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Productos'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inicio'])[2]/preceding::button[4]</option><option>xpath=//*/text()[normalize-space(.)='Alejandro Rodríguez']/parent::*</option><option>xpath=//button</option><option>css=button.general-ui-module__G9rtfa__loginButton.general-ui-module__G9rtfa__logged</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mi cuenta'])[1]/following::p[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mi cuenta'])[1]/following::p[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Alejandro Rodríguez'])[1]/following::p[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mi perfil'])[2]/preceding::p[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nombre'])[1]/preceding::p[2]</option><option>xpath=//*/text()[normalize-space(.)='Mis favoritos']/parent::*</option><option>xpath=//li[2]/a/div/p</option></datalist></td><td></td></tr>
+<tr><td>verifyElementPresent</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mis Favoritos'])[1]/following::p[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mis Favoritos'])[1]/following::p[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mi cuenta'])[1]/following::p[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inicio'])[2]/preceding::p[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Categorías'])[1]/preceding::p[2]</option><option>xpath=//*/text()[normalize-space(.)='VOLANTE LOGITECH G923 DRIVING FORCE GAMER PS4 – PS5 y PC']/parent::*</option><option>xpath=//div/div/p</option><option>css=div.favorite-module__OQtUma__productCard > p</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mi cuenta'])[1]/following::div[3]<datalist><option>xpath=//button[@type='submit']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Mi cuenta'])[1]/following::div[3]</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>
